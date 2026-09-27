@@ -28,6 +28,10 @@
   display: flex;
 }
 
+.section.flex-center.bg-black.s-3 {
+  min-height: 100svh;
+}
+
 .section.flex-split {
   flex-flow: row;
   justify-content: flex-start;
@@ -292,6 +296,8 @@
 .full-flex-center.bg-black.gap-6.item {
   flex: none;
   height: 100svh;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
 }
 
@@ -511,6 +517,10 @@
 }
 
 @media screen and (max-width: 991px) {
+  .section.flex-center.bg-black.s-3 {
+    min-height: auto;
+  }
+
   .section.flex-split {
     height: auto;
     min-height: 50svh;
