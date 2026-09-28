@@ -312,6 +312,12 @@
   align-items: center;
 }
 
+.full-flex-center.bg-black.preroll {
+  z-index: 1000;
+  position: absolute;
+  overflow: hidden;
+}
+
 .full-flex-center.pad-t2 {
   padding-top: 2svw;
 }
@@ -516,6 +522,16 @@
   inset: auto 0% 0%;
 }
 
+.icon {
+  height: 40svh;
+  position: absolute;
+  inset: auto;
+}
+
+.icon._2, .icon._1 {
+  opacity: 0;
+}
+
 @media screen and (max-width: 991px) {
   .section.flex-center.bg-black.s-3 {
     min-height: auto;
@@ -704,6 +720,10 @@
     line-height: 1em;
   }
 
+  .text-splash.text-black.pad-2.v2.x {
+    line-height: .9em;
+  }
+
   .text-splash.text-black.pad-2.outro.anim {
     font-size: 9vw;
   }
@@ -722,10 +742,12 @@
   .is-splitted.flex.bg-white.sticky-top.right {
     width: 100%;
     min-height: 35svh;
+    overflow: clip;
   }
 
   .is-splitted.flex.bg-white.sticky-top.right._1 {
     display: flex;
+    overflow: clip;
   }
 
   .is-splitted.flex.bg-white.sticky-top.right._2 {
