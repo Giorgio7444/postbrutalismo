@@ -865,12 +865,13 @@
     width: auto;
     height: 60svh;
     font-size: 12px;
+    display: none;
   }
 
   .img-split.v3 {
-    height: 55svw;
-    display: none;
-    overflow: hidden;
+    height: 55svh;
+    display: block;
+    overflow: visible;
   }
 
   .img-70 {
